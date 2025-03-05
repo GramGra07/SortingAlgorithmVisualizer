@@ -1,4 +1,4 @@
-from sortingAlgoVisualizer.visualizer import is_sorted
+from isSorted import is_sorted
 
 
 class Algorithm:

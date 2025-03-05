@@ -4,8 +4,8 @@ from time import sleep
 import pygame
 from numpy import sort
 from pygame import display
-from sortingAlgoVisualizer.dataCreator import DataCreator
-from sortingAlgoVisualizer.isSorted import is_sorted
+
+from isSorted import is_sorted
 
 
 class Visualizer:

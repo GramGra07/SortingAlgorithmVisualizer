@@ -1,10 +1,10 @@
 import asyncio
 import sys
 import pygame
-from sortingAlgoVisualizer.algorithms import *
-from sortingAlgoVisualizer.dataCreator import DataCreator
-from sortingAlgoVisualizer.isSorted import is_sorted
-from sortingAlgoVisualizer.visualizer import Visualizer
+
+from algorithms import StalinSort, BogoSort
+from dataCreator import DataCreator
+from visualizer import Visualizer
 
 waitTime = 0.01
 dataAmount = 1000
