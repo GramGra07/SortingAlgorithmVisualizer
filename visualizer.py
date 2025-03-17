@@ -17,7 +17,7 @@ class Visualizer:
         self.name = algorithm.name
         pygame.init()
         self.window_width = self.calculate_window_width(len(self.array))
-        self.window_height = 800
+        self.window_height = 600
         self.screen = display.set_mode((self.window_width, self.window_height))
     def calculate_window_width(self, length):
         min_width = 800
