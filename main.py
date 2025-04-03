@@ -2,17 +2,18 @@ import asyncio
 import sys
 import pygame
 
-from algorithms import StalinSort, BogoSort
+from algorithms import StalinSort, BogoSort, BubbleSort, QuickSort, MergeSort, InsertionSort, HeapSort, SelectionSort, \
+    TimSort
 from dataCreator import DataCreator
 from visualizer import Visualizer
 
-waitTime = 0.01
+waitTime = 0.001
 dataAmount = 1000
 data = DataCreator(dataAmount).getData()
-algorithms = [StalinSort(data),BogoSort(data),]
-index = 0
+algorithms = [StalinSort(data),BogoSort(data),BubbleSort(data),QuickSort(data),MergeSort(data),InsertionSort(data),HeapSort(data),SelectionSort(data),TimSort(data)]
+index = 5
 algorithm = algorithms[index]
-visualizer = Visualizer(algorithms[0])
+visualizer = Visualizer(algorithm)
 
 async def main():
     running = True
